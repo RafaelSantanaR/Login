@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #5C1F99;
+}
+
+#logo {
+    position: absolute;
+    height: 80px;
+    width: 80px;
+    top: 25px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    height: 390px;
+    width: 290px;
+    top: 60px;
+    overflow: hidden;
+    padding: 6px;
+    border-radius: 12px;
+    background-color: #FFFFFF;
+    box-shadow: 1px 3px 5px rgba(169, 169, 169, 0.456);
+}
+
+form {
+    position: absolute;
+    height: 390px;
+    width: 240px;
+    top: 10px;
+    transition: 0.5s;
+}
+
+.buttonsForm {
+    position: relative;
+    margin-top: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 0px 7px blueviolet;
+}
+
+.buttonsForm button {
+    position: relative;
+    cursor: pointer;
+    padding: 10px 30px;
+    border: none;
+    background-color: transparent;
+}
+
+.btnColor {
+    position: absolute;
+    height: 100%;
+    width: 105px;
+    border-radius: 20px;
+    transition: 0.5s;
+    background: linear-gradient(to right, #5956E9, #A963F8);
+}
+
+.input-data {
+    position: relative;
+    height: 30px;
+    width: 100%;
+    margin-bottom: 30px;
+}
+
+div#senha {
+    margin-top: 30px;
+}
+
+.input-data input:focus~label,
+.input-data input:valid~label {
+    transform: translateY(-10px);
+    font-size: 14px;
+    color: rgba(89, 89, 89, 0.9);
+}
+
+.input-data input {
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size: 15px;
+    border-bottom: 2px solid silver;
+}
+
+.input-data label {
+    position: absolute;
+    bottom: 15px;
+    left: 0;
+    color: gray;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.input-data .underline {
+    position: absolute;
+    bottom: 0;
+    height: 1.5px;
+    width: 100%;
+}
+
+.input-data .underline::before {
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: rgba(89, 89, 89, 0.5);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.input-data input:focus~.underline::before,
+.input-data input:valid~.underline::before {
+    transform: scaleX(1);
+}
+
+#login {
+    left: 25px;
+    margin-top: 110px;
+}
+
+#cadastro {
+    left: 450px;
+    margin-top: 100px;
+}
+
+button[type="submit"] {
+    height: 30px;
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    font-size: 16px;
+    border-radius: 10px;
+    color: #FFFFFF;
+    background-color: #5f279fa7;
+}

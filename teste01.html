@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login</title>
+</head>
+
+<body>
+
+    <img src="imagens/logo.png" id="logo">
+
+    <div class="container">
+        <div class="buttonsForm">
+            <div class="btnColor"></div>
+            <button id="btnLogin">Sign in</button>
+            <button id="btnCadastro">Sign up</button>
+        </div>
+
+        <form id="login">
+            <div class="input-data">
+                <input type="text" required>
+                <div class="underline"></div>
+                <label>E-mail</label>
+            </div>
+
+            <div class="input-data" id="senha">
+                <input type="password" required>
+                <div class="underline"></div>
+                <label>Senha</label>
+            </div>
+            <button type="submit">Entrar</button>
+        </form>
+
+        <form id="cadastro">
+            <div class="input-data">
+                <input type="text" required>
+                <div class="underline"></div>
+                <label>E-mail</label>
+            </div>
+
+            <div class="input-data">
+                <input type="password" required>
+                <div class="underline"></div>
+                <label>Senha</label>
+            </div>
+
+            <div class="input-data">
+                <input type="password" required>
+                <div class="underline"></div>
+                <label>Confirmar Senha</label>
+            </div>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+
+</html>
