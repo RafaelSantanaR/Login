@@ -11,14 +11,18 @@ body {
     align-items: center;
     height: 100vh;
     width: 100vw;
-    background-color: #5C1F99;
+    background-image: url(imagens/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
 }
 
 #logo {
     position: absolute;
     height: 80px;
     width: 80px;
-    top: 25px;
+    top: 20px;
 }
 
 .container {
@@ -26,27 +30,28 @@ body {
     flex-direction: column;
     align-items: center;
     position: relative;
-    height: 390px;
+    height: 450px;
     width: 290px;
-    top: 60px;
     overflow: hidden;
     padding: 6px;
     border-radius: 12px;
-    background-color: #FFFFFF;
-    box-shadow: 1px 3px 5px rgba(169, 169, 169, 0.456);
+    backdrop-filter: blur(10px);
+    background-color: #ffffff17;
+    box-shadow: 1px 3px 5px rgba(169, 169, 169, 0.062);
 }
 
 form {
     position: absolute;
     height: 390px;
     width: 240px;
-    top: 10px;
+    top: 100px;
     transition: 0.5s;
+    
 }
 
 .buttonsForm {
     position: relative;
-    margin-top: 30px;
+    margin-top: 120px;
     border-radius: 30px;
     box-shadow: 0px 0px 7px blueviolet;
 }
@@ -68,14 +73,20 @@ form {
     background: linear-gradient(to right, #5956E9, #A963F8);
 }
 
+#btnLogin, #btnCadastro {
+    color: #ffffff;
+}
+
+
 .input-data {
     position: relative;
     height: 30px;
     width: 100%;
     margin-bottom: 30px;
+    
 }
 
-div#senha {
+#senha {
     margin-top: 30px;
 }
 
@@ -83,7 +94,7 @@ div#senha {
 .input-data input:valid~label {
     transform: translateY(-10px);
     font-size: 14px;
-    color: rgba(89, 89, 89, 0.9);
+    color: white;
 }
 
 .input-data input {
@@ -91,14 +102,15 @@ div#senha {
     width: 100%;
     border: none;
     font-size: 15px;
-    border-bottom: 2px solid silver;
+    border-bottom: 2px solid rgb(165, 165, 165);
+    background-color: transparent;
 }
 
 .input-data label {
     position: absolute;
     bottom: 15px;
     left: 0;
-    color: gray;
+    color: rgb(165, 165, 165);
     pointer-events: none;
     transition: all 0.3s ease;
 }
@@ -115,7 +127,7 @@ div#senha {
     content: "";
     height: 100%;
     width: 100%;
-    background-color: rgba(89, 89, 89, 0.5);
+    background-color: rgb(255, 255, 255);
     transform: scaleX(0);
     transition: transform 0.3s ease;
 }
@@ -143,5 +155,5 @@ button[type="submit"] {
     font-size: 16px;
     border-radius: 10px;
     color: #FFFFFF;
-    background-color: #5f279fa7;
+    background-color: #8037d3a7;
 }
