@@ -18,43 +18,48 @@
             <button id="btnLogin">Sign in</button>
             <button id="btnCadastro">Sign up</button>
         </div>
-
-        <form id="login">
+<!--
+    login com o usuário já registrado
+-->
+        <form id="login" action="">
             <div class="input-data">
-                <input type="text" required>
+                <input id="loginemail" type="text" required>
                 <div class="underline"></div>
                 <label>E-mail</label>
             </div>
 
-            <div class="input-data" id="senha">
-                <input type="password" required>
+            <div class="input-data">
+                <input id="loginsenha" type="password" required>
                 <div class="underline"></div>
                 <label>Senha</label>
             </div>
-            <button type="submit">Entrar</button>
+            <button type="submit" onclick="login()">Entrar</button>
         </form>
-
+<!--
+     Efetuar um cadastro de um usuário novo
+-->
         <form id="cadastro">
             <div class="input-data">
-                <input type="text" required>
+                <input id="email" type="email" required>
                 <div class="underline"></div>
                 <label>E-mail</label>
             </div>
 
             <div class="input-data">
-                <input type="password" required>
+                <input id="senha" type="password" required>
                 <div class="underline"></div>
                 <label>Senha</label>
             </div>
 
             <div class="input-data">
-                <input type="password" required>
+                <input id="senha" type="password" required>
                 <div class="underline"></div>
                 <label>Confirmar Senha</label>
             </div>
-            <button type="submit">Cadastrar</button>
+            
+            <input type="submit">Cadastrar
         </form>
-    </div>
+    </div>  
 
     <script src="index.js"></script>
 </body>

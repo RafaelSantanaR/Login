@@ -1,0 +1,17 @@
+body{
+    color: azure;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: auto;
+    width: 80%;
+    background-color: #5c1f99;
+}
+th{
+    border: 2px solid;
+    border-color: #ffffff;
+}
+td{
+    border: 2px solid;
+    background-color: #541d8b;
+}
